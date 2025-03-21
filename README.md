@@ -7,4 +7,4 @@ Muchos sistemas dinámicos, independientemente de que sean mecánicos, eléctric
 
 ### Ejemplo de ecuación en Markdown con imagen
 
-![Ecuación](https://latex.codecogs.com/svg.latex?E%3Dmc%5E2)
+![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}E%3Dmc%5E2)
