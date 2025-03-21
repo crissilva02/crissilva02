@@ -10,7 +10,8 @@ Muchos sistemas dinámicos, independientemente de que sean mecánicos, eléctric
 ![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}f''(t)%20=%20s^2f(s)%20-%20f(0)%20-%20f'(0))  
 ![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}f'''(t)%20=%20s^3f(s)%20-%20s^2f(0)%20-%20sf'(0)%20-%20f''(0))
 
-#### Ecuación diferencial:
+#### Ecuación diferencial:![ROG_wallpaper_Stealth_3840x2160](https://github.com/user-attachments/assets/9b8e8fdd-11ec-441d-afa6-1a8f7f70a9a1)
+
 ![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}x''%20+%202x'%20+%205x%20=%203)  
 ![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}x(0)%20=%200;%20x'(0)%20=%200)  
 
