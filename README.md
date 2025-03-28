@@ -37,84 +37,18 @@ Muchos sistemas dinámicos, independientemente de que sean mecánicos, eléctric
 ![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}u(t)%20+%20(m%20\cdot%20g)%20-%20(k_2%20\cdot%20y(t))%20-%20(k_1%20\cdot%20y'(t))%20=%20m%20\cdot%20y''(t))
 
 
-# Solución de la Ecuación Diferencial
+### Paso 1: Escribir las ecuaciones en el dominio de Laplace
+![Ecuación 1](https://latex.codecogs.com/svg.latex?\color{white}0.1X_1(s)-0.3X_2(s)+98-0.1sX(s)=10s^2X(s))  
+![Ecuación 2](https://latex.codecogs.com/svg.latex?\color{white}549-0.3X_1(s)+0.3X_2(s)=5s^2X(s))
 
-Este documento explica paso a paso la solución del sistema de ecuaciones diferenciales en el dominio de Laplace.
+### Paso 2: Resolver el sistema
+**Despejamos** \(X_1(s)\):  
+![Ecuación 3](https://latex.codecogs.com/svg.latex?\color{white}X_1(s)=\frac{10s^2X(s)+0.1sX(s)-98+0.3X_2(s)}{0.1})  
+![Ecuación 4](https://latex.codecogs.com/svg.latex?\color{white}X_1(s)=100s^2X(s)+sX(s)-980+3X_2(s))
 
-## Paso 1: Escribir las ecuaciones en el dominio de Laplace
+### Paso 3: Sustituir \(X_2(s)\) en \(X_1(s)\)
+![Ecuación 5](https://latex.codecogs.com/svg.latex?\color{white}X_1(s)=100s^2X(s)+sX(s)-980+3\left(\frac{-25s^2X(s)}{3}-\frac{sX(s)}{2}+1405\right))  
+![Ecuación 6](https://latex.codecogs.com/svg.latex?\color{white}X_1(s)=-75s^2X(s)-0.5sX(s)+3235)
 
-Las ecuaciones dadas son:
-
-<p align="center">
-<img src="https://latex.codecogs.com/png.latex?\dpi{150} \color{white} 0.1X_1(s)-0.3X_2(s)+98-0.1sX(s)=10s^2X(s)">
-</p>
-
-<p align="center">
-<img src="https://latex.codecogs.com/png.latex?\dpi{150} \color{white} 549-0.3X_1(s)+0.3X_2(s)=5s^2X(s)">
-</p>
-
-Nuestro objetivo es despejar  
-<img src="https://latex.codecogs.com/png.latex?\dpi{150} \color{white} X_1(s)">  
-y  
-<img src="https://latex.codecogs.com/png.latex?\dpi{150} \color{white} X_2(s)">.
-
----
-
-## Paso 2: Resolver el sistema
-
-### Despejamos <img src="https://latex.codecogs.com/png.latex?\dpi{150} \color{white} X_1(s)"> de la primera ecuación
-
-<p align="center">
-<img src="https://latex.codecogs.com/png.latex?\dpi{150} \color{white} 0.1X_1(s)-0.3X_2(s)=10s^2X(s)+0.1sX(s)-98">
-</p>
-
-Despejamos  
-<img src="https://latex.codecogs.com/png.latex?\dpi{150} \color{white} X_1(s)">:
-
-<p align="center">
-<img src="https://latex.codecogs.com/png.latex?\dpi{150} \color{white} X_1(s)=\frac{10s^2X(s)+0.1sX(s)-98+0.3X_2(s)}{0.1}">
-</p>
-
-<p align="center">
-<img src="https://latex.codecogs.com/png.latex?\dpi{150} \color{white} X_1(s)=100s^2X(s)+sX(s)-980+3X_2(s)">
-</p>
-
----
-
-### Sustituyéndolo en la segunda ecuación
-
-Sustituyamos  
-<img src="https://latex.codecogs.com/png.latex?\dpi{150} \color{white} X_1(s)">  
-en la segunda ecuación:
-
-<p align="center">
-<img src="https://latex.codecogs.com/png.latex?\dpi{150} \color{white} 549-0.3(100s^2X(s)+sX(s)-980+3X_2(s))+0.3X_2(s)=5s^2X(s)">
-</p>
-
-Distribuyendo  
-<img src="https://latex.codecogs.com/png.latex?\dpi{150} \color{white} -0.3">:
-
-<p align="center">
-<img src="https://latex.codecogs.com/png.latex?\dpi{150} \color{white} 549-30s^2X(s)-0.3sX(s)+294-0.9X_2(s)+0.3X_2(s)=5s^2X(s)">
-</p>
-
-Simplificamos:
-
-<p align="center">
-<img src="https://latex.codecogs.com/png.latex?\dpi{150} \color{white} 843-30s^2X(s)-0.3sX(s)-0.6X_2(s)=5s^2X(s)">
-</p>
-
-Despejamos  
-<img src="https://latex.codecogs.com/png.latex?\dpi{150} \color{white} X_2(s)">:
-
-<p align="center">
-<img src="https://latex.codecogs.com/png.latex?\dpi{150} \color{white} -0.6X_2(s)=-5s^2X(s)+30s^2X(s)+0.3sX(s)-843">
-</p>
-
----
-
-## Conclusión
-
-El sistema se ha transformado en una ecuación en términos de  
-<img src="https://latex.codecogs.com/png.latex?\dpi{150} \color{white} X(s)">,  
-y se puede resolver para obtener la respuesta final en el dominio de Laplace.
+### Paso 4: Resultados finales
+![Ecuación 7](https://latex.codecogs.com/svg.latex?\color{white}X_2(s)=-\frac{25s^2X(s)}{3}-\frac{sX(s)}{2}+1405)
