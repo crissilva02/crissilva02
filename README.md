@@ -37,18 +37,20 @@ Muchos sistemas dinámicos, independientemente de que sean mecánicos, eléctric
 ![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}u(t)%20+%20(m%20\cdot%20g)%20-%20(k_2%20\cdot%20y(t))%20-%20(k_1%20\cdot%20y'(t))%20=%20m%20\cdot%20y''(t))
 
 
-### Paso 1: Escribir las ecuaciones en el dominio de Laplace
-![Ecuación 1](https://latex.codecogs.com/svg.latex?\color{white}0.1X_1(s)-0.3X_2(s)+98-0.1sX(s)=10s^2X(s))  
-![Ecuación 2](https://latex.codecogs.com/svg.latex?\color{white}549-0.3X_1(s)+0.3X_2(s)=5s^2X(s))
-
+#### Ejercicio de ejemplo sistema mecanico 
+![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}0.1X_1(s)-0.3X_2(s)+98-0.1sX(s)=10s^2X(s))  
+![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}549-0.3X_1(s)+0.3X_2(s)=5s^2X(s))
+![Ecuación](https://latex.codecogs.com/png.image?\bg_white&space;m_1&space;\ddot{x}_1&space;=&space;10&space;\cdot&space;9.8&space;-&space;0.3&space;x_1&space;-&space;0.3&space;x_2&space;-&space;0.2&space;x_1&space;-&space;0.1&space;\dot{x}_1)
+![Ecuación](https://latex.codecogs.com/png.image?\bg_white&space;m_2&space;\ddot{x}_2&space;=&space;\frac{48}{5}&space;-&space;0.2&space;x_1&space;-&space;0.15&space;x_1&space;+&space;0.3&space;x_2&space;-&space;5.2&space;\ddot{x}_2)
 ### Paso 2: Resolver el sistema
 **Despejamos** \(X_1(s)\):  
-![Ecuación 3](https://latex.codecogs.com/svg.latex?\color{white}X_1(s)=\frac{10s^2X(s)+0.1sX(s)-98+0.3X_2(s)}{0.1})  
-![Ecuación 4](https://latex.codecogs.com/svg.latex?\color{white}X_1(s)=100s^2X(s)+sX(s)-980+3X_2(s))
+![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}X_1(s)=\frac{10s^2X(s)+0.1sX(s)-98+0.3X_2(s)}{0.1})  
+![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}X_1(s)=100s^2X(s)+sX(s)-980+3X_2(s))
+
 
 ### Paso 3: Sustituir \(X_2(s)\) en \(X_1(s)\)
-![Ecuación 5](https://latex.codecogs.com/svg.latex?\color{white}X_1(s)=100s^2X(s)+sX(s)-980+3\left(\frac{-25s^2X(s)}{3}-\frac{sX(s)}{2}+1405\right))  
-![Ecuación 6](https://latex.codecogs.com/svg.latex?\color{white}X_1(s)=-75s^2X(s)-0.5sX(s)+3235)
+![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}X_1(s)=100s^2X(s)+sX(s)-980+3\left(\frac{-25s^2X(s)}{3}-\frac{sX(s)}{2}+1405\right))  
+![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}X_1(s)=-75s^2X(s)-0.5sX(s)+3235)
 
 ### Paso 4: Resultados finales
-![Ecuación 7](https://latex.codecogs.com/svg.latex?\color{white}X_2(s)=-\frac{25s^2X(s)}{3}-\frac{sX(s)}{2}+1405)
+![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}X_2(s)=-\frac{25s^2X(s)}{3}-\frac{sX(s)}{2}+1405)
