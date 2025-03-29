@@ -38,10 +38,11 @@ Muchos sistemas dinámicos, independientemente de que sean mecánicos, eléctric
 
 
 #### Ejercicio de ejemplo sistema mecanico 
+![Ecuación 1](https://latex.codecogs.com/svg.latex?\color{white}m_1\ddot{x}_1=10\cdot9.8-0.3x_1-0.3x_2-0.2x_1-0.1\dot{x}_1)
+![Ecuación 2](https://latex.codecogs.com/svg.latex?\color{white}m_2\ddot{x}_2=\frac{48}{5}-0.2x_1-0.15x_1+0.3x_2-5.2\ddot{x}_2)
 ![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}0.1X_1(s)-0.3X_2(s)+98-0.1sX(s)=10s^2X(s))  
 ![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}549-0.3X_1(s)+0.3X_2(s)=5s^2X(s))
-![Ecuación](https://latex.codecogs.com/png.image?\bg_white&space;m_1&space;\ddot{x}_1&space;=&space;10&space;\cdot&space;9.8&space;-&space;0.3&space;x_1&space;-&space;0.3&space;x_2&space;-&space;0.2&space;x_1&space;-&space;0.1&space;\dot{x}_1)
-![Ecuación](https://latex.codecogs.com/png.image?\bg_white&space;m_2&space;\ddot{x}_2&space;=&space;\frac{48}{5}&space;-&space;0.2&space;x_1&space;-&space;0.15&space;x_1&space;+&space;0.3&space;x_2&space;-&space;5.2&space;\ddot{x}_2)
+
 ### Paso 2: Resolver el sistema
 **Despejamos** \(X_1(s)\):  
 ![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}X_1(s)=\frac{10s^2X(s)+0.1sX(s)-98+0.3X_2(s)}{0.1})  
