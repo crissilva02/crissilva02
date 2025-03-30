@@ -38,6 +38,7 @@ Muchos sistemas dinámicos, independientemente de que sean mecánicos, eléctric
 
 
 #### Ejercicio de ejemplo sistema mecanico 
+![Descripción de la imagen](C:\Usurios\ASUS\imagenes\ejercico.jpeg)
 ![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}m_1\ddot{x}_1=(k_2(x_1-x_2))+(m_1g)-(k_1(x_1))+(b\dot{x_1}))   
 ![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}m_2\ddot{x}_2=u(t)+(m_2g)-(k_2(x_2-x_1)))  
 ![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}0.1X_1(s)-0.3X_2(s)+98-0.1sX(s)=10s^2X(s))  
