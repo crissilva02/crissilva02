@@ -38,20 +38,16 @@ Muchos sistemas dinámicos, independientemente de que sean mecánicos, eléctric
 
 
 #### Ejercicio de ejemplo sistema mecanico 
-![Ecuación 1](https://latex.codecogs.com/svg.latex?\color{white}m_1\ddot{x}_1=10\cdot9.8-0.3x_1-0.3x_2-0.2x_1-0.1\dot{x}_1)
-![Ecuación 2](https://latex.codecogs.com/svg.latex?\color{white}m_2\ddot{x}_2=\frac{48}{5}-0.2x_1-0.15x_1+0.3x_2-5.2\ddot{x}_2)
+![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}m_1\ddot{x}_1=(k_2(x_1-x_2))+(m_1g)-(k_1(x_1))+(b\dot{x_1}))   
+![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}m_2\ddot{x}_2=u(t)+(m_2g)-(k_2(x_2-x_1)))  
 ![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}0.1X_1(s)-0.3X_2(s)+98-0.1sX(s)=10s^2X(s))  
 ![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}549-0.3X_1(s)+0.3X_2(s)=5s^2X(s))
 
-### Paso 2: Resolver el sistema
-**Despejamos** \(X_1(s)\):  
+#### **Despejamos** \(X_1(s)\) y luego Sustituir \(X_2(s)\) en \(X_1(s)\): 
 ![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}X_1(s)=\frac{10s^2X(s)+0.1sX(s)-98+0.3X_2(s)}{0.1})  
 ![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}X_1(s)=100s^2X(s)+sX(s)-980+3X_2(s))
-
-
-### Paso 3: Sustituir \(X_2(s)\) en \(X_1(s)\)
 ![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}X_1(s)=100s^2X(s)+sX(s)-980+3\left(\frac{-25s^2X(s)}{3}-\frac{sX(s)}{2}+1405\right))  
 ![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}X_1(s)=-75s^2X(s)-0.5sX(s)+3235)
 
-### Paso 4: Resultados finales
+#### Resultados finales
 ![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}X_2(s)=-\frac{25s^2X(s)}{3}-\frac{sX(s)}{2}+1405)
