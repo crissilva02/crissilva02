@@ -39,7 +39,7 @@ Muchos sistemas dinámicos, independientemente de que sean mecánicos, eléctric
 
 #### Ejercicio de ejemplo sistema mecanico 
 ![Ecuación 1](https://latex.codecogs.com/svg.latex?\color{white}m_1\ddot{x}_1=10\cdot9.8-0.3x_1-0.3x_2-0.2x_1-0.1\dot{x}_1)
-
+![Ecuación 2](https://latex.codecogs.com/svg.latex?\color{white}m_2\ddot{x}_2=\frac{48}{5}-0.2x_1-0.15x_1+0.3x_2-5.2\ddot{x}_2)
 ![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}0.1X_1(s)-0.3X_2(s)+98-0.1sX(s)=10s^2X(s))  
 ![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}549-0.3X_1(s)+0.3X_2(s)=5s^2X(s))
 
