@@ -37,11 +37,14 @@ Muchos sistemas dinámicos, independientemente de que sean mecánicos, eléctric
 ![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}u(t)%20+%20(m%20\cdot%20g)%20-%20(k_2%20\cdot%20y(t))%20-%20(k_1%20\cdot%20y'(t))%20=%20m%20\cdot%20y''(t))
 
 
-#### Ejercicio de ejemplo sistema mecanico   
+#### 💡 Ejercicio de ejemplo sistema mecanico   
+![WhatsApp Image 2025-04-07 at 3 56 09 AM](https://github.com/user-attachments/assets/b2114af7-f808-443e-b819-8b28515ada19)   
+   
 ![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}m_1\ddot{x}_1=(k_2(x_1-x_2))+(m_1g)-(k_1(x_1))+(b\dot{x_1}))   
 ![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}m_2\ddot{x}_2=u(t)+(m_2g)-(k_2(x_2-x_1)))  
 ![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}0.1X_1(s)-0.3X_2(s)+98-0.1sX(s)=10s^2X(s))  
 ![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}549-0.3X_1(s)+0.3X_2(s)=5s^2X(s))
+
 
 #### **Despejamos** \(X_1(s)\) y luego Sustituir \(X_2(s)\) en \(X_1(s)\): 
 ![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}X_1(s)=\frac{10s^2X(s)+0.1sX(s)-98+0.3X_2(s)}{0.1})  
@@ -99,4 +102,6 @@ function dxdt = modelo(t, x, m1, m2, k1, k2, b, g)
 end
 
 ```
+
+### SIETEMAS DINAMICOS ELECTRICOS
 
