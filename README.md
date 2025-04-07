@@ -51,3 +51,52 @@ Muchos sistemas dinámicos, independientemente de que sean mecánicos, eléctric
 
 #### Resultados finales
 ![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}X_2(s)=-\frac{25s^2X(s)}{3}-\frac{sX(s)}{2}+1405)
+
+```matlab
+function sistema_dos_masas
+    % Parámetros dados
+    m1 = 10;         % masa 1 (kg)
+    m2 = 5;          % masa 2 (kg)
+    k1 = 0.2;        % constante de resorte 1 (N/m)
+    k2 = 0.3;        % constante de resorte 2 (N/m)
+    b = 0.1;         % coeficiente de amortiguamiento (N·s/m)
+    g = 9.81;        % gravedad (m/s^2)
+
+    % Tiempo de simulación
+    tspan = [0 20];  % segundos
+
+    % Condiciones iniciales: [x1 x1_dot x2 x2_dot]
+    x0 = [0.1 0 0.2 0];  % puedes ajustar esto si lo deseas
+
+    % Resolver con ode45
+    [t, X] = ode45(@(t, x) modelo(t, x, m1, m2, k1, k2, b, g), tspan, x0);
+
+    % Graficar resultados
+    figure;
+    plot(t, X(:,1), 'r', t, X(:,3), 'b', 'LineWidth', 1.5);
+    legend('x1(t)', 'x2(t)');
+    xlabel('Tiempo (s)');
+    ylabel('Posición (m)');
+    title('Sistema masa-resorte-amortiguador');
+    grid on;
+end
+
+function dxdt = modelo(t, x, m1, m2, k1, k2, b, g)
+    % Variables de estado
+    x1 = x(1);
+    x1_dot = x(2);
+    x2 = x(3);
+    x2_dot = x(4);
+
+    % Fuerza externa sobre m2
+    u = sin(t);  % Puedes reemplazar esto por otra función
+
+    % Ecuaciones diferenciales
+    x1_ddot = (k2*(x1 - x2) + m1*g - k1*x1 + b*x1_dot) / m1;
+    x2_ddot = (u + m2*g - k2*(x2 - x1)) / m2;
+
+    dxdt = [x1_dot; x1_ddot; x2_dot; x2_ddot];
+end
+
+```
+
