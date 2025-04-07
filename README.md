@@ -103,5 +103,23 @@ end
 
 ```
 
-### SIETEMAS DINAMICOS ELECTRICOS
+### ⚡ SIETEMAS DINAMICOS ELECTRICOS
 
+![Eq1](https://latex.codecogs.com/svg.latex?\color{white}-U%20+%20V_c'%20+%20V_c%20+%20V_c%20=%200)   
+![Eq2](https://latex.codecogs.com/svg.latex?\color{white}-U%20+%20\left(\frac{R_2}{R_1}\right)%20+%20V_c%20=%200)    
+![Eq3](https://latex.codecogs.com/svg.latex?\color{white}V_c%20=%20-\left(-U%20+%20\frac{R_2}{R_1}\right))   
+![Eq4](https://latex.codecogs.com/svg.latex?\color{white}-\frac{V_c}{R_2}%20=%20\frac{U}{R_1}%20-%20Y\left(\frac{1}{R_1}%20+%20\frac{1}{R_2}\right))   
+![Eq5](https://latex.codecogs.com/svg.latex?\color{white}-\frac{V_c}{R_2}%20=%20\frac{UR_2%20-%20Y(R_1%20+%20R_2)}{R_1R_2})   
+![Eq6](https://latex.codecogs.com/svg.latex?\color{white}V_c%20=%20Y\left(\frac{R_1%20+%20R_2}{R_1}\right)%20-%20U\frac{R_2}{R_1})   
+![Eq7](https://latex.codecogs.com/svg.latex?\color{white}V_c'%20=%20Y'\left(\frac{R_1%20+%20R_2}{R_1}\right)%20-%20U'\frac{R_2}{R_1})   
+
+   
+### ⚡
+ 
+![Eq1](https://latex.codecogs.com/svg.latex?\color{white}I_1%20-%20I_2%20-%20I_3%20=%200)   
+![Eq2](https://latex.codecogs.com/svg.latex?\color{white}e_i%20-%20V_x%20-%20C_1\frac{dV_x}{dt}%20-%20C_2\frac{dV_{e0}}{dt}%20=%200)    
+![Eq3](https://latex.codecogs.com/svg.latex?\color{white}V_x%20=%20V_{R_2}%20+%20V_{e0})   
+![Eq4](https://latex.codecogs.com/svg.latex?\color{white}V_x%20=%20I_3R_2%20+%20V_{e0})   
+![Eq5](https://latex.codecogs.com/svg.latex?\color{white}V_x%20=%20C_2R_2\frac{dV_{e0}}{dt}%20+%20V_{e0})   
+![Eq6](https://latex.codecogs.com/svg.latex?\color{white}e_i%20=%20-V_x%20-%20R_1C_1\frac{dV_x}{dt}%20-%20R_1C_2\frac{dV_{e0}}{dt})   
+![Eq7](https://latex.codecogs.com/svg.latex?\color{white}e_i%20=%20-C_2R_2\frac{dV_{e0}}{dt}%20-%20V_{e0}%20-%20R_1C_1\left(C_2R_2\frac{d^2V_{e0}}{dt^2}%20+%20\frac{dV_{e0}}{dt}\right)%20-%20R_1C_2\frac{dV_{e0}}{dt}%20=%200)
