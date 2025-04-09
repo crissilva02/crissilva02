@@ -102,6 +102,8 @@ function dxdt = modelo(t, x, m1, m2, k1, k2, b, g)
 end
 
 ```
+![image](https://github.com/user-attachments/assets/df63d732-7419-4264-9065-ffd27b87272d)
+
 
 ### ⚡ SIETEMAS DINAMICOS ELECTRICOS
 
@@ -123,3 +125,22 @@ end
 ![Eq5](https://latex.codecogs.com/svg.latex?\color{white}V_x%20=%20C_2R_2\frac{dV_{e0}}{dt}%20+%20V_{e0})   
 ![Eq6](https://latex.codecogs.com/svg.latex?\color{white}e_i%20=%20-V_x%20-%20R_1C_1\frac{dV_x}{dt}%20-%20R_1C_2\frac{dV_{e0}}{dt})   
 ![Eq7](https://latex.codecogs.com/svg.latex?\color{white}e_i%20=%20-C_2R_2\frac{dV_{e0}}{dt}%20-%20V_{e0}%20-%20R_1C_1\left(C_2R_2\frac{d^2V_{e0}}{dt^2}%20+%20\frac{dV_{e0}}{dt}\right)%20-%20R_1C_2\frac{dV_{e0}}{dt}%20=%200)
+
+### ⚡
+![Eq1](https://latex.codecogs.com/svg.image?\color{white}e_i%20=%20V_x%20-%20I_1%20R_1%20-%20C_1%20\frac{dV_x}{dt}%20-%20C_2%20\frac{dV_{e0}}{dt})    
+![Eq2](https://latex.codecogs.com/svg.image?\color{white}V_x%20=%20V_{R2}%20+%20V_{e0})   
+![Eq3](https://latex.codecogs.com/svg.image?\color{white}V_x%20=%20I_3%20R_2%20+%20V_{e0})   
+![Eq4](https://latex.codecogs.com/svg.image?\color{white}V_x%20=%20C_2%20R_2%20\frac{dV_{e0}}{dt}%20+%20V_{e0})   
+![Eq5](https://latex.codecogs.com/svg.image?\color{white}e_i%20=%20-V_x%20-%20R_1%20C_1%20\frac{dV_x}{dt}%20-%20R_1%20C_2%20\frac{dV_{e0}}{dt})   
+![Eq6](https://latex.codecogs.com/svg.image?\color{white}e_i%20=%20-C_2%20R_2%20\frac{dV_{e0}}{dt}%20-%20V_{e0}%20-%20R_1%20C_1%20\left(C_2%20R_2%20\frac{d^2V_{e0}}{dt^2}%20+%20\frac{dV_{e0}}{dt}\right)%20-%20R_1%20C_2%20\frac{dV_{e0}}{dt})   
+
+### ⚡ Amplificadores 
+
+![Eq1](https://latex.codecogs.com/svg.image?\color{white}I_1%20=%20I_2%20)   
+![Eq1](https://latex.codecogs.com/svg.image?\color{white}\frac{e_o%20-%20V_x}{R_2}%20-%20\frac{V_x}{R_1}%20=%200)   
+![Eq2](https://latex.codecogs.com/svg.image?\color{white}V_x%20=%20e_i)   
+![Eq3](https://latex.codecogs.com/svg.image?\color{white}\frac{e_o}{R_2}%20-%20\frac{e_i}{R_2}%20-%20\frac{e_i}{R_1}%20=%200)   
+![Eq4](https://latex.codecogs.com/svg.image?\color{white}\frac{e_o}{R_2}%20=%20e_i%20\left(\frac{1}{R_2}%20+%20\frac{1}{R_1}\right))   
+![Eq5](https://latex.codecogs.com/svg.image?\color{white}e_o%20=%20e_i%20\left(1%20+%20\frac{R_2}{R_1}\right))   
+
+
