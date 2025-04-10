@@ -17,8 +17,9 @@ Muchos sistemas dinámicos, independientemente de que sean mecánicos, eléctric
 #### Transformada de Laplace aplicada:
 ![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}(s^2x(s))%20+%202(5x(s))%20+%205x(s)%20=%203)  
 ![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}xs(s^2%20+%202s%20+%205)%20=%203)  
-![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}xs%20=%20\frac{3}{s(s^2%20+%202s%20+%205)})
+![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}xs%20=%20\frac{3}{s(s^2%20+%202s%20+%205)})   
 
+-----
 #### Ley de Hooke y amortiguadores:
 ![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}f%20=%20kx%20=%20k(x_1%20-%20x_2))  
 ![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}ff%20=%20k_1%20\cdot%20y')  
@@ -36,7 +37,7 @@ Muchos sistemas dinámicos, independientemente de que sean mecánicos, eléctric
 ![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}u(t)%20+%20(m%20\cdot%20g)%20-%20(k_2%20\cdot%20y(t))%20-%20(k_1%20\cdot%20y'(t))%20=%20m%20\cdot%20a)  
 ![Ecuación](https://latex.codecogs.com/svg.latex?\color{white}u(t)%20+%20(m%20\cdot%20g)%20-%20(k_2%20\cdot%20y(t))%20-%20(k_1%20\cdot%20y'(t))%20=%20m%20\cdot%20y''(t))
 
-
+------
 #### 💡 Ejercicio de ejemplo sistema mecanico   
 ![WhatsApp Image 2025-04-07 at 3 56 09 AM](https://github.com/user-attachments/assets/b2114af7-f808-443e-b819-8b28515ada19)   
    
@@ -69,7 +70,7 @@ function sistema_dos_masas
     tspan = [0 20];  % segundos
 
     % Condiciones iniciales: [x1 x1_dot x2 x2_dot]
-    x0 = [0.1 0 0.2 0];  % puedes ajustar esto si lo deseas
+    x0 = [0.1 0 0.2 0];  
 
     % Resolver con ode45
     [t, X] = ode45(@(t, x) modelo(t, x, m1, m2, k1, k2, b, g), tspan, x0);
@@ -85,14 +86,14 @@ function sistema_dos_masas
 end
 
 function dxdt = modelo(t, x, m1, m2, k1, k2, b, g)
-    % Variables de estado
+    % Variables 
     x1 = x(1);
     x1_dot = x(2);
     x2 = x(3);
     x2_dot = x(4);
 
     % Fuerza externa sobre m2
-    u = sin(t);  % Puedes reemplazar esto por otra función
+    u = sin(t);  
 
     % Ecuaciones diferenciales
     x1_ddot = (k2*(x1 - x2) + m1*g - k1*x1 + b*x1_dot) / m1;
@@ -102,8 +103,9 @@ function dxdt = modelo(t, x, m1, m2, k1, k2, b, g)
 end
 
 ```
-![image](https://github.com/user-attachments/assets/df63d732-7419-4264-9065-ffd27b87272d)
+![image](https://github.com/user-attachments/assets/df63d732-7419-4264-9065-ffd27b87272d)    
 
+------
 
 ### ⚡ SIETEMAS DINAMICOS ELECTRICOS
 
@@ -143,4 +145,51 @@ end
 ![Eq4](https://latex.codecogs.com/svg.image?\color{white}\frac{e_o}{R_2}%20=%20e_i%20\left(\frac{1}{R_2}%20+%20\frac{1}{R_1}\right))   
 ![Eq5](https://latex.codecogs.com/svg.image?\color{white}e_o%20=%20e_i%20\left(1%20+%20\frac{R_2}{R_1}\right))   
 
+---
+### ⚡ Ejerccio con valorres numericos    
+![image](https://github.com/user-attachments/assets/768faac5-7c44-47ed-8ba5-fbc65342caae)
+   
+![Eq1](https://latex.codecogs.com/svg.image?\color{white}-u%20+%20v\cdot%20R_1%20+%20v\cdot%20R_2%20+%20v_C%20=%200)   
+![Eq2](https://latex.codecogs.com/svg.image?\color{white}-u(t)%20+%20\left(C\cdot\frac{dv(t)}{dt}\cdot%20R_1\right)%20+%20\left(C\cdot\frac{dv(t)}{dt}\cdot%20R_2\right)%20+%20C\cdot\frac{dv(t)}{dt}%20=%200)   
+![Eq3](https://latex.codecogs.com/svg.image?\color{white}\frac{u%20-%20y}{R_1}%20=%20\frac{y%20-%20v_C}{R_2})   
+![Eq4](https://latex.codecogs.com/svg.image?\color{white}-\frac{v_C}{R_2}%20=%20\frac{u%20-%20y}{R_1}%20-%20\frac{y}{R_2})   
+![Eq5](https://latex.codecogs.com/svg.image?\color{white}-\frac{v_C}{R_2}%20=%20\frac{u}{R_1}%20-%20y\left(\frac{1}{R_1}%20+%20\frac{1}{R_2}\right))   
+
+#### u = 5v
+#### R1 = 50
+#### R1 = 50
+#### C = 100mF   
+
+![Eq1](https://latex.codecogs.com/svg.image?\color{white}-\frac{v_C}{20}%20=%20\frac{5}{50}%20-%20y\left(\frac{1}{50}%20+%20\frac{1}{20}\right))   
+![Eq2](https://latex.codecogs.com/svg.image?\color{white}-\frac{v_C}{20}%20=%200.1%20-%20y\left(0.02%20+%200.05\right))   
+![Eq3](https://latex.codecogs.com/svg.image?\color{white}-\frac{v_C}{20}%20=%200.1%20-%200.07y)   
+```matlab
+% Parámetros
+R1 = 50;
+R2 = 20;
+C = 100e-3;  % 100 mF = 0.1 F
+u = 5;       % Voltaje de entrada
+
+% Función que define la EDO para vC(t)
+f = @(t, vC) (1/C) * ((u / R1) - ((1 / R1 + 1 / R2) * ((u / R1 + vC / R2) / (1 / R1 + 1 / R2))) + vC / R2);
+
+% Simulación con ode45
+tspan = [0 5];
+vC0 = 0;  % Condición inicial
+[t, vC] = ode45(f, tspan, vC0);
+
+% Calcular y(t) para cada vC(t)
+y = (u / R1 + vC / R2) / (1 / R1 + 1 / R2);
+
+vR2 = y - vC;
+
+
+figure;
+plot(t, vR2, 'LineWidth', 2);
+xlabel('Tiempo (s)');
+ylabel('Voltaje en R_2 (V)');
+title('Voltaje en la resistencia R_2 usando ODE45');
+grid on;
+```
+![image](https://github.com/user-attachments/assets/2075cbb1-5d70-4937-957a-118df65a813e)
 
