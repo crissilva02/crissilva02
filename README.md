@@ -191,5 +191,6 @@ ylabel('Voltaje en R_2 (V)');
 title('Voltaje en la resistencia R_2 usando ODE45');
 grid on;
 ```
-![image](https://github.com/user-attachments/assets/2075cbb1-5d70-4937-957a-118df65a813e)
+![image](https://github.com/user-attachments/assets/2075cbb1-5d70-4937-957a-118df65a813e)   
+![image](https://github.com/user-attachments/assets/1368f36f-ad67-48eb-b760-c346fd732365)
 
